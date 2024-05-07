@@ -1,3 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #2D3142;
+  padding: 10px;
+}
+
+.content {
+  background-color: #4F5D75;
+  flex: 1;
+  padding: 10px;
+}
+
+.footer {
+  height: 40px;
+  align-content: center;
+  text-align: center;
+  background-color: #2D3142;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  .logo {
+      width: 100px;
+      animation-name: Header-logo-spin;
+      animation-duration: 3s;
+      cursor: pointer;
+  }
+
+  .logo:hover {
+    animation-iteration-count: 100;
+}
+
+  .nav-items {
+    display: flex;
+    list-style: none;        
+  }
+
+  .nav-items > li {
+    margin: 20px;
+  }
+
+  .nav-items > :hover {
+    color: #61DAFB;
+    cursor: pointer;
+  }  
+}
+
+@keyframes Header-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -40,3 +118,4 @@
 .read-the-docs {
   color: #888;
 }
+*/
