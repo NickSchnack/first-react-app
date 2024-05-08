@@ -9,10 +9,9 @@ export default function Header() {
                     src={reactLogo}
                     alt="React Logo."
                 ></img>
+                <span className="title">ReactFacts</span>
                 <ul className="nav-items">
-                    <li>Pricing</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li>React Course - Project 1</li>
                 </ul>
             </nav>
         </header>

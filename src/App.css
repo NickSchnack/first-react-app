@@ -25,7 +25,15 @@ html, body {
 .content {
   background-color: #4F5D75;
   flex: 1;
-  padding: 10px;
+  padding: 20px;
+
+  .list-reasons {
+    font-size: 1.3em;
+
+    li::marker {
+      color: #61DAFB;
+    }
+  }
 }
 
 .footer {
@@ -39,17 +47,24 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+
   .logo {
-      width: 100px;
+      min-width: 80px;
       animation-name: Header-logo-spin;
       animation-duration: 3s;
       cursor: pointer;
   }
-
   .logo:hover {
     animation-iteration-count: 100;
-}
+  }
+
+  .title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #61DAFB;
+    flex: 1;
+    padding-left: 10px;
+  }
 
   .nav-items {
     display: flex;
