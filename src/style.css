@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+    background-color: #21222A;
+    color: #DEEBF8;
+
+    .nav--logo {
+        width: 8%;
+        max-width: 75px;
+        animation-name: nav-logo-spin;
+        animation-timing-function: ease;
+        animation-duration: 2s;
+        cursor: pointer;
+    }
+
+    .nav--logo:hover {
+        animation-iteration-count: 100;
+    }
+
+    .nav--logo_text {
+        margin: 0;
+        font-size: 30px;
+        color: #61DAFB;
+    }
+
+    .nav--title {
+        margin: 0;
+        flex-grow: 1;
+        text-align: right;
+        font-weight: 600;
+    }
+}
+
+main {
+    flex: 1;
+    padding: 60px;
+    color: #DEEBF8;
+    background-image: url("./assets/react-icon-large.png");
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 60%;
+    background-color: #282D35;
+
+    .main--title {
+        margin: 0;
+        letter-spacing: -0.05em;
+    }
+
+    .main--list > li {
+        padding-block: 10px;
+        vertical-align: middle;
+    }
+    
+    .main--list > li::marker {        
+        color: #61DAFB;
+        font-size: 1.4rem;
+    }
+}
+
+@keyframes nav-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+}
