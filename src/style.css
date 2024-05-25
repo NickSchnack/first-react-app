@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     height: 100vh;
     font-family: 'Inter', sans-serif;
@@ -38,7 +46,7 @@ nav {
     }
 
     .nav--title {
-        margin: 0;
+        margin: 0 20px 0 0;
         flex-grow: 1;
         text-align: right;
         font-weight: 600;
@@ -46,13 +54,13 @@ nav {
 }
 
 main {
-    flex: 1;
+    flex-grow: 1;
     padding: 60px;
     color: #DEEBF8;
     background-image: url("./assets/react-icon-large.png");
     background-repeat: no-repeat;
     background-position-x: right;
-    background-position-y: 60%;
+    background-position-y: 100px;
     background-color: #282D35;
 
     .main--title {
